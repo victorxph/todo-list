@@ -7,7 +7,6 @@ font-family: 'Source Serif 4', serif; */
 
 :root {
 
-    /* Fonts */
     --main-font: 'Source Sans 3', sans-serif;
     --header-font: 'Oswald', sans-serif;
     
@@ -23,7 +22,7 @@ font-family: 'Source Serif 4', serif; */
 
 :root.grey{
 
-    background: url(/images/blurry-gradient-haikei1.png) center;
+    background: url(images/blurry-gradient-haikei1.png) center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -38,7 +37,7 @@ font-family: 'Source Serif 4', serif; */
 
 :root.purple{
 
-    background: url(/images/blurry-gradient-haikei.png) center;
+    background: url(images/blurry-gradient-haikei.png) center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
