@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Source+Serif+4:opsz@8..60&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Source Serif 4', serif; */
+
+:root {
+
+    /* Fonts */
+    --main-font: 'Source Sans 3', sans-serif;
+    --header-font: 'Oswald', sans-serif;
+    
+    --radius: 15px;
+
+    font-family: var(--main-font);
+    color: var(--text);
+
+}
+
+:root.grey{
+
+    background: url(/images/blurry-gradient-haikei1.png) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    --text: rgb(238, 238, 237);
+    --background: #10100f;
+    --primary: #bcbab8;
+    --secondary: #1a1919;
+    --accent: #837f7c;
+
+}
+
+:root.purple{
+
+    background: url(/images/blurry-gradient-haikei.png) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    --text: #ffffff;
+    --background: #000000;
+    --primary: #45227c;
+    --secondary: #0d0718;
+    --accent: #6632b8;
+
+}
+
+*{
+
+    box-sizing: border-box;
+
+}
+
+html {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    min-height: 95vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    background-color: #ffffff21;
+    box-shadow: 0 15px 40px -20px black;
+    width: 600px;
+    padding: 15px;
+}
+
+.main-title{
+
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+h1, h2{
+
+    font-family: var(--header-font);
+
+}
+
+h1{
+
+    margin: 0px;
+    font-size: 28px;
+
+}
+
+.todo-input{
+    
+    width: 100%;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: var(--radius);
+    padding: 1rem 1.5rem;
+    background-color: #f4f4f425;
+    color: var(--text);
+
+}
+
+.todo-input::placeholder{
+
+    color: #ffffff70;
+
+}
+
+.todos,
+.completed-container,
+.uncompleted-container {
+
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+
+}
+
+.todo-item{
+
+    background-color: #f4f4f4bd;
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.todo-item span {
+
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+
+}
+
+.todo-item input[type="checkbox"]{
+
+    appearance: none;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: var(--text);
+    accent-color: lime;
+    border-radius: 30%;
+    cursor: pointer;
+
+}
+
+.todo-item a {
+
+    color: #555555;
+
+}
+
+.todo-item a svg{
+
+    pointer-events: none;
+
+}
+
+.completed-container .todo-item{
+
+    background-color: #74c674;
+    color: var(--text);
+}
+
+
+h2{
+
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+}
+
+#theme-btn{
+
+    padding: 15px;
+    border-radius: var(--radius);
+    border: none;
+    background-color: #ffffff21;
+    color: var(--text);
+    font-family: var(--header-font);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    box-shadow: 0 15px 40px -20px black;
+    scale: 1.25;
+
+
+}
+
+#theme-btn:hover {
+
+    transform: scale(1.02); 
+
+}
