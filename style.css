@@ -11,8 +11,9 @@ font-family: 'Source Serif 4', serif; */
     --main-font: 'Source Sans 3', sans-serif;
     --header-font: 'Oswald', sans-serif;
     
-    --background: #10100f;
-    
+    background-color: #22221f;
+    color: white;
+
     --radius: 15px;
 
     font-family: var(--main-font);
@@ -31,6 +32,7 @@ font-family: 'Source Serif 4', serif; */
     --primary: #bcbab8;
     --secondary: #1a1919;
     --accent: #837f7c;
+    --completed-green: rgb(0, 201, 0);
 
 }
 
@@ -45,6 +47,7 @@ font-family: 'Source Serif 4', serif; */
     --primary: #45227c;
     --secondary: #0d0718;
     --accent: #6632b8;
+    --completed-green: lime;
 
 }
 
@@ -108,6 +111,7 @@ h1{
     padding: 1rem 1.5rem;
     background-color: #f4f4f425;
     color: var(--text);
+    font-size: 20px;
 
 }
 
@@ -174,7 +178,7 @@ h1{
 .completed-container .todo-item{
 
     background-color: #74c674;
-    color: var(--text);
+    color: black;
 }
 
 
